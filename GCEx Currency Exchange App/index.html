@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="currencyContainer">
+        <div class="countryOption">
+          <h3>Select your region</h3>
+          <div class="currencyFilter">
+            <select name="country" id="country">
+              <option value="0">Select Country</option>
+              <option value="USD">USA</option>
+              <option value="EUR">EUROPE</option>
+              <option value="YUAN">CHINA</option>
+              <option value="TAKA">BANGLADESH</option>
+            </select>
+            <input type="submit" class="checkBtn" />
+          </div>
+        </div>
+
+        <div class="currencyDisplay">
+          <h3>Currency List</h3>
+          <table class="tableData"></table>
+          <div class="btns">
+            <button class="exBtn">Exchange your Currency</button>
+            <button class="upBtn">Add New Currency</button>
+          </div>
+        </div>
+      </div>
+      <div class="operations">
+        <div class="exchangeCurrency">
+          <h3>Exchange Currency</h3>
+          <form action="">
+            <input type="text" class="buyAmount" placeholder="Enter Amount" />
+            <div class="currencies">
+              <select name="buy" id="buySelect">
+                <option value="0">Select Buy Currency</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="YUAN">YUAN</option>
+                <option value="TAKA">TAKA</option>
+              </select>
+              <select name="sell" id="sellSelect">
+                <option value="0">Select Sell Currency</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="YUAN">YUAN</option>
+                <option value="TAKA">TAKA</option>
+              </select>
+            </div>    
+            <input type="submit" value="PURCHASE" class="purchaseBtn" />
+          </form>
+        </div>
+
+        <div class="updateCurrency">
+          <h3>Add Currency</h3>
+          <form action="">
+            <input
+              type="text"
+              class="coninput"
+              placeholder="Enter Country Name"
+            />
+            <input
+              type="text"
+              class="curinput"
+              placeholder="Enter Currency Name"
+            />
+            <input
+              type="text"
+              class="binput"
+              placeholder="Currency Buy Exchange Rate in $"
+            />
+            <input
+              type="text"
+              class="sinput"
+              placeholder="Currency Sell Exchange Rate "
+            />
+            <input type="submit" value="ADD  CURRENCY" class="currencyAddBtn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
